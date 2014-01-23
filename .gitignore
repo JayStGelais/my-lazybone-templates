@@ -1,0 +1,25 @@
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Editor Files #
+################
+*~
+*.swp
+
+# Gradle Files #
+################
+.gradle
+local.properties
+
+# Build output directies
+/target
+**/test-output
+**/target
+**/bin
+build
+*/build
+.m2
