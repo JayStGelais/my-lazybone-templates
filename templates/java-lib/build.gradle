@@ -55,13 +55,14 @@ publishing {
 apply plugin: 'bintray'
 apply plugin: 'release'
 
+def project=this
 bintray {
 	user = project.hasProperty("bintrayUserName") ? bintrayUserName : null
 	key = project.hasProperty("bintrayApiKey") ? bintrayApiKey : null
 	publications = ["mavenJava"]
 	pkg {
 		repo = "main"
-		name = project.rootProject.name
+		name = project.name
 		licenses = ["Apache-2.0"]
 	}
 }
